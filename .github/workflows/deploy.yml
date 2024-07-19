@@ -27,12 +27,9 @@ jobs:
     - name: List build directory for debugging
       run: ls -al ./dist
 
-    - name: Deploy to master-build branch
-      env:
-        PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add -f dist
-        git commit -m "Deploy build to master-build branch"
-        git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/MeyerZhao/reference.git `git subtree split --prefix dist master`:master-build --force
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        commit_message: ${{ github.event.head_commit.message }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
