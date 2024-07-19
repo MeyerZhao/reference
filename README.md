@@ -19,7 +19,7 @@ Quick Reference
 
 坑已挖，需要您的参与完善和[贡献](./docs/quickreference.md)！🙏
 <!--rehype:style=padding-bottom: 23px;-->
-
+[Git](./docs/git.md)<!--rehype:style=background: rgb(215 89 62);&class=tag&data-lang=版本控制-->
 [Django](./docs/django.md)<!--rehype:style=background: rgb(12 75 51);&class=contributing tag&data-lang=Python-->
 [FFmpeg](./docs/ffmpeg.md)<!--rehype:style=background: rgb(0 193 9);&class=contributing-->
 [Flask](./docs/flask.md)<!--rehype:style=background: rgb(210 168 255);&class=contributing tag&data-lang=Python-->
@@ -68,7 +68,6 @@ Quick Reference
 [MATLAB](./docs/matlab.md)<!--rehype:style=background: rgb(0 118 168);&class=contributing-->
 [PHP](./docs/php.md)<!--rehype:style=background: rgb(79 91 147);-->
 [Python](./docs/python.md)<!--rehype:style=background: rgb(43 91 132);-->
-[R 语言](./docs/r.md)<!--rehype:style=background: rgb(39 108 192);&class=contributing&data-info-->
 [Ruby](./docs/ruby.md)<!--rehype:style=background: rgb(204 52 45);-->
 [Rust](./docs/rust.md)<!--rehype:style=background: rgb(71 71 71);-->
 [Scala](./docs/scala.md)<!--rehype:style=background: rgb(34 82 94);-->

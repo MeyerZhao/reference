@@ -837,6 +837,14 @@ Git 技巧
   $ git push origin --delete <old> #方法1
   $ git push origin :oldBranchName #方法2
   ```
+
+- 删除本地 fetch 的 分支
+  - 要删除已经通过 git fetch 获取但不存在于远程仓库的分支，你可以使用以下命令：
+
+  ```shell
+  $ git fetch --prune
+  ```
+  > 清理之后 可以使用 `git branch -a` 查看清理之后的 branch 列表
 <!--rehype:className=style-timeline-->
 
 ### Log
@@ -1143,7 +1151,7 @@ Host github.com
   ```shell
   $ git remote add upstream https://github.com/jaywcjlove/reference.git
   ```
-  
+
 - 本地项目操作
 
   ```shell
@@ -1293,3 +1301,10 @@ Conventional Commmits
 - [最常用的 git 提示和技巧](https://github.com/git-tips/tips)
 - [Conventional Commits 官方网站](https://www.conventionalcommits.org/zh-hans/v1.0.0/) _(conventionalcommits.org)_
 - [Conventional Commits Cheatsheet](https://gist.github.com/Zekfad/f51cb06ac76e2457f11c80ed705c95a3) _(gist.github.com)_
+
+
+- [How to change Git log date formats](https://stackoverflow.com/questions/7853332/how-to-change-git-log-date-formats)
+```bash
+✗ git config log.date iso
+✗ git config --global --list #查看全局配置
+```
